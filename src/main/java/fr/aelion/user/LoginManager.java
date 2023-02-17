@@ -1,10 +1,13 @@
 package fr.aelion.user;
 
+import fr.aelion.repo.StudentRepo;
+
 public class LoginManager {
 
     private String username;
     private String password;
-    private boolean isLoggedIn = false;
+
+    static StudentRepo stdRepo = new StudentRepo();
 
     public LoginManager(String username, String password) {
         this.username = username;
@@ -27,14 +30,10 @@ public class LoginManager {
         this.password = password;
     }
 
-    public boolean login(String uName, String pWord){
-        return isLoggedIn = (uName.equals(username) && pWord.equals(password));
+    public String login(String uName, String pWord){
+        return stdRepo.findByLogAndPwd(uName,pWord)?"200":"400";
     }
     public void logout(){
-        this.isLoggedIn = false;
-    }
 
-    public boolean isLoggedIn() {
-        return isLoggedIn;
     }
 }

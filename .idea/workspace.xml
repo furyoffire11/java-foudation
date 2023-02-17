@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dde7da30-8f6e-4303-b6d1-8ea8830a5178" name="Changes" comment="good">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/repo/StudentRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/run/PersonRun.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/run/StudentRun.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/LoginManagerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/StudentRepoTest.java" afterDir="false" />
+    <list default="true" id="dde7da30-8f6e-4303-b6d1-8ea8830a5178" name="Changes" comment="Repo test for student">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/models/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/user/LoginManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/models/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/models/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/repo/StudentRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/repo/StudentRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/run/StudentRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/run/StudentRun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/user/LoginManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/user/LoginManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +24,32 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="dev" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -86,11 +107,30 @@
       <option name="project" value="LOCAL" />
       <updated>1676560624439</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="good">
+      <created>1676636717642</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676636717642</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="good" />
-    <option name="LAST_COMMIT_MESSAGE" value="good" />
+    <MESSAGE value="Repo test for student" />
+    <MESSAGE value="repo test for student" />
+    <option name="LAST_COMMIT_MESSAGE" value="Repo test for student" />
   </component>
 </project>

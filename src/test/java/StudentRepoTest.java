@@ -16,6 +16,6 @@ public class StudentRepoTest {
     @Test
     @DisplayName("List should have 1 student")
     public void studentInitTest(){
-        assertEquals(1,sR.students.size());
+        assertEquals(1,sR.size());
     }
 }
