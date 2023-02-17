@@ -41,4 +41,9 @@ public class Student{
     public String getEmail() {
         return email;
     }
+
+
+    public boolean login(String a, String b) {
+        return a.equals(this.username)&&b.equals(this.password);
+    }
 }

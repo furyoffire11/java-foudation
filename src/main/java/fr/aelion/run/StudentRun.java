@@ -13,7 +13,7 @@ public class StudentRun {
         if (Ok.isLoggedIn()){
             System.out.println("Deja connect");
         } else {
-            //System.out.println(Ok.login("a","b"));
+            System.out.println(Ok.login("a","b"));
         }
     }
 }
