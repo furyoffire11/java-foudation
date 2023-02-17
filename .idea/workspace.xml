@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dde7da30-8f6e-4303-b6d1-8ea8830a5178" name="Changes" comment="good" />
+    <list default="true" id="dde7da30-8f6e-4303-b6d1-8ea8830a5178" name="Changes" comment="good">
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/repo/StudentRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/run/PersonRun.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/run/StudentRun.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/LoginManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/StudentRepoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/models/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/user/LoginManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/models/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/models/Student.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +42,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2LoRACNuQu5lp1aU9TNh8CfRPSx" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -45,6 +58,11 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="fr.aelion.user" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -61,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676559296832</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="good">
+      <created>1676560624439</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676560624439</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

@@ -1,27 +1,23 @@
 package fr.aelion.models;
 
+import fr.aelion.user.LoginManager;
+
 public class Student{
 
     public String lastName;
     public String firstName;
-    public Login credential = new Login();
+    public LoginManager credential;
     private String email;
 
     public boolean isLoggedIn() {
         return credential.isLoggedIn();
     }
 
-    public Student(String lastName, String firstName, String email) {
+    public Student(String lastName, String firstName, String email,String uName, String pWord) {
         this.lastName = lastName;
         this.firstName = firstName;
         this.email = email;
-    }
-    public void setUsername(String username) {
-        this.credential.setUsername(username);
-    }
-
-    public void setPassword(String password) {
-        this.credential.setPassword(password);
+        this.credential = new LoginManager( uName,  pWord);
     }
     public boolean login(String uName, String pWord){
         /*i 
@@ -30,5 +26,9 @@ public class Student{
     }
     public void logout(){
         this.credential.logout();
+    }
+
+    public String getEmail() {
+        return email;
     }
 }
