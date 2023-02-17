@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dde7da30-8f6e-4303-b6d1-8ea8830a5178" name="Changes" comment="Repo test for student">
+    <list default="true" id="dde7da30-8f6e-4303-b6d1-8ea8830a5178" name="Changes" comment="Login">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/models/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/models/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/repo/StudentRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/repo/StudentRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/run/StudentRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/run/StudentRun.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/user/LoginManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/user/LoginManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LoginManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,13 +44,18 @@
           <entry type="LOCAL">
             <value>
               <list>
-                <branch-info repo="$PROJECT_DIR$" source="dev" />
+                <branch-info repo="$PROJECT_DIR$" source="devSolo" />
               </list>
             </value>
           </entry>
         </map>
       </branch-storage>
     </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -84,6 +90,33 @@
       <recent name="fr.aelion.user" />
     </key>
   </component>
+  <component name="RunManager" selected="JUnit.LoginManagerTest">
+    <configuration name="LoginManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-foundation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoginManagerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginManagerTest.stdLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-foundation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoginManagerTest" />
+      <option name="METHOD_NAME" value="stdLogin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.LoginManagerTest" />
+        <item itemvalue="JUnit.LoginManagerTest.stdLogin" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -114,7 +147,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676636717642</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="STudent repo">
+      <created>1676642332006</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676642332006</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Login">
+      <created>1676642919235</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676642919235</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,7 +169,39 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="dev" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="devSolo" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
@@ -131,6 +210,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Repo test for student" />
     <MESSAGE value="repo test for student" />
-    <option name="LAST_COMMIT_MESSAGE" value="Repo test for student" />
+    <MESSAGE value="STudent repo" />
+    <MESSAGE value="Login" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/java_foundation$LoginManagerTest_stdLogin.ic" NAME="LoginManagerTest.stdLogin Coverage Results" MODIFIED="1676645931969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/java_foundation$LoginManagerTest.ic" NAME="LoginManagerTest Coverage Results" MODIFIED="1676644585107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

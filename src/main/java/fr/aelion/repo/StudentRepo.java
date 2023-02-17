@@ -19,15 +19,20 @@ public class StudentRepo {
         Ok.setUsername("a");
         Ok.setPassword("b");
         students.add(Ok);
+        Ok = new Student("ok2","bok2","o2@p");
+        Ok.setUsername("Bond");
+        Ok.setPassword("007");
+        students.add(Ok);
     }
 
-    public boolean findByLogAndPwd(String Log, String Pwd){
+    public Student findByLogAndPwd(String Log, String Pwd){
         for (Student stud : this.students){
             if (stud.getUsername().equals(Log)&&stud.getPassword().equals(Pwd)){
-            return true;
+
+            return stud;
             }
         }
-        return false;
+        return null;
 
     }
 

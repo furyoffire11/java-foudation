@@ -1,3 +1,5 @@
+import fr.aelion.models.Student;
+import fr.aelion.repo.StudentRepo;
 import fr.aelion.user.LoginManager;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -20,5 +22,22 @@ public class LoginManagerTest {
         assertAll("credentials",
                 () -> assertEquals("Bond",this.lM.getUsername()),
                 () -> assertEquals("007",this.lM.getPassword()));
+    }
+
+    @Test
+    @DisplayName("loggedin test")
+    public void stdLogin(){
+        StudentRepo StudRepo = lM.getStdRepo();
+        Student student = StudRepo.findByLogAndPwd("Bond","007");
+        System.out.println(lM.login());
+        assertEquals(true,student.LoggedIn());
+    }
+
+    @Test
+    @DisplayName("loggedout test")
+    public void stdLogout(){
+        StudentRepo StudRepo = lM.getStdRepo();
+        Student student = StudRepo.findByLogAndPwd("Bond","007");
+        assertEquals(false,student.LoggedIn());
     }
 }

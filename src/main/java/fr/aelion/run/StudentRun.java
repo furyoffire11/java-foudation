@@ -10,7 +10,7 @@ public class StudentRun {
         Student Ok = new Student("ok","bok","o@p");
         Ok.setUsername("a");
         Ok.setPassword("b");
-        if (Ok.isLoggedIn()){
+        if (Ok.LoggedIn()){
             System.out.println("Deja connect");
         } else {
             System.out.println(Ok.login("a","b"));

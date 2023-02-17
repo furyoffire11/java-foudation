@@ -1,7 +1,5 @@
 package fr.aelion.models;
 
-import fr.aelion.user.LoginManager;
-
 public class Student{
 
     public String lastName;
@@ -12,7 +10,7 @@ public class Student{
     private boolean isLoggedIn = false;
     private String email;
 
-    public boolean isLoggedIn() {
+    public boolean LoggedIn() {
         return isLoggedIn;
     }
 
@@ -45,5 +43,9 @@ public class Student{
 
     public boolean login(String a, String b) {
         return a.equals(this.username)&&b.equals(this.password);
+    }
+
+    public void LoggedIn(boolean b) {
+        this.isLoggedIn=b;
     }
 }
