@@ -1,18 +1,15 @@
 package fr.aelion.models;
 
-public class Student{
-
+public class Student {
     public String lastName;
     public String firstName;
 
-    private String username;
-    private String password;
-    private boolean isLoggedIn = false;
     private String email;
 
-    public boolean LoggedIn() {
-        return isLoggedIn;
-    }
+    private String username;
+    private String password;
+
+    private Boolean isLoggedIn = false;
 
     public Student(String lastName, String firstName, String email) {
         this.lastName = lastName;
@@ -20,16 +17,8 @@ public class Student{
         this.email = email;
     }
 
-    public String getUsername() {
-        return username;
-    }
-
     public void setUsername(String username) {
         this.username = username;
-    }
-
-    public String getPassword() {
-        return password;
     }
 
     public void setPassword(String password) {
@@ -40,12 +29,38 @@ public class Student{
         return email;
     }
 
-
-    public boolean login(String a, String b) {
-        return a.equals(this.username)&&b.equals(this.password);
+    public boolean setEmail(String email) {
+        if (email.contains("@")) {
+            this.email = email;
+            return true;
+        }
+        return false;
     }
 
-    public void LoggedIn(boolean b) {
-        this.isLoggedIn=b;
+    public String getUsername() {
+        return username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public Boolean login(String username, String password) {
+        if (username.equals(this.username) && password.equals(this.password)) {
+            this.isLoggedIn = true;
+            return true;
+        }
+        return false;
+    }
+
+    public void logout() {
+        this.isLoggedIn = false;
+    }
+    public Boolean isLoggedIn() {
+        return this.isLoggedIn;
+    }
+
+    public void isLoggedIn(boolean isLoggedIn) {
+        this.isLoggedIn = isLoggedIn;
     }
 }

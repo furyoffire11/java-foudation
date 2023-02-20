@@ -1,59 +1,50 @@
 package fr.aelion.user;
 
 import fr.aelion.models.Student;
-import fr.aelion.repo.StudentRepo;
+import fr.aelion.repositories.StudentRepository;
 
 public class LoginManager {
-
-    private String username;
+    private String login;
     private String password;
 
-    private StudentRepo stdRepo = new StudentRepo();
-
-    public LoginManager(String username, String password) {
-        this.username = username;
+    private StudentRepository studentRepository = new StudentRepository();
+    public LoginManager(String login, String password) {
+        this.login = login;
         this.password = password;
     }
 
-    public StudentRepo getStdRepo() {
-        return stdRepo;
-    }
-
-    public String getUsername() {
-        return username;
+    public String getLogin() {
+        return login;
     }
 
     public String getPassword() {
         return password;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public StudentRepository getStudentRepository() {
+        return this.studentRepository;
     }
+    public String login() {
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String login(){
-        if (username == null || password == null){return "403";}
-        Student stud = stdRepo.findByLogAndPwd(username,password);
-        if(stud instanceof Student){
-            stud.LoggedIn(true);
-            return "200";
-
+        Student student = this.studentRepository.findByLoginAndPassword(this.login, this.password);
+        if (student != null) {
+            student.isLoggedIn(true);
+            return "200 Ok";
         }
-        return "404";
+
+        return "404 Not Found";
+        /*
+          if (this.studentRepository.findByLoginAndPassword(this.login, this.password)) {
+           return "200 Ok"
+          }
+          return "404 Not Found"
+         */
     }
-    public String logout(){
-        if (username == null || password == null){return "403";}
-        Student stud = stdRepo.findByLogAndPwd(username,password);
-        if(stud instanceof Student){
-            stud.LoggedIn(false);
-            return "200";
 
+    public void logout() {
+        Student student = this.studentRepository.findByLoginAndPassword(this.login, this.password);
+        if (student != null) {
+            student.isLoggedIn(false);
         }
-        return "404";
-
     }
 }

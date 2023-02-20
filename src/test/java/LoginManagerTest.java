@@ -1,43 +1,62 @@
 import fr.aelion.models.Student;
-import fr.aelion.repo.StudentRepo;
+import fr.aelion.repositories.StudentRepository;
 import fr.aelion.user.LoginManager;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertAll;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class LoginManagerTest {
-
-    LoginManager lM;
+    public LoginManager loginManager;
+    public StudentRepository studentRepository;
     @BeforeEach
-    public void setup(){
-        this.lM = new LoginManager("Bond","007");
-
+    public void setup() {
+        this.loginManager = new LoginManager("bond", "007");
+        this.studentRepository = loginManager.getStudentRepository();
+    }
+    @Test
+    @DisplayName("Login and password should be 'bond' and '007'")
+    public void haveCredentials() {
+        assertAll("Credentials",
+                () -> assertEquals("bond", this.loginManager.getLogin()),
+                () -> assertEquals("007", this.loginManager.getPassword())
+        );
     }
 
     @Test
-    @DisplayName("Login and pwd should be Bond and 007")
-    public void haveCredentials(){
-        assertAll("credentials",
-                () -> assertEquals("Bond",this.lM.getUsername()),
-                () -> assertEquals("007",this.lM.getPassword()));
+    @DisplayName("Should return 200 Ok if credentials was good")
+    public void goodCredentials() {
+        assertEquals("200 Ok", this.loginManager.login());
     }
 
     @Test
-    @DisplayName("loggedin test")
-    public void stdLogin(){
-        StudentRepo StudRepo = lM.getStdRepo();
-        Student student = StudRepo.findByLogAndPwd("Bond","007");
-        System.out.println(lM.login());
-        assertEquals(true,student.LoggedIn());
+    @DisplayName("Should return 404 Not Found if bad credentials")
+    public void badCredentials() {
+        LoginManager loginManager = new LoginManager("toto", "tata");
+        assertEquals("404 Not Found", loginManager.login());
     }
 
     @Test
-    @DisplayName("loggedout test")
-    public void stdLogout(){
-        StudentRepo StudRepo = lM.getStdRepo();
-        Student student = StudRepo.findByLogAndPwd("Bond","007");
-        assertEquals(false,student.LoggedIn());
+    @DisplayName("Student should be logged in")
+    public void studentLogin() {
+        StudentRepository studentRepository = this.loginManager.getStudentRepository();
+        Student student = studentRepository.findByLoginAndPassword("bond", "007");
+
+        assertEquals(false, student.isLoggedIn());
+
+        this.loginManager.login();
+
+        assertEquals(true, student.isLoggedIn());
+    }
+
+    @Test
+    @DisplayName("Student should be logged out")
+    public void studentLogout() {
+        Student student = this.studentRepository.findByLoginAndPassword("bond", "007");
+        this.loginManager.login();
+        this.loginManager.logout();
+        assertEquals(false, student.isLoggedIn());
     }
 }

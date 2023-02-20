@@ -2,18 +2,28 @@ package fr.aelion.run;
 
 import fr.aelion.models.Student;
 
-/**
- * create Student instances makes they say hello
- */
 public class StudentRun {
     public void run() {
-        Student Ok = new Student("ok","bok","o@p");
-        Ok.setUsername("a");
-        Ok.setPassword("b");
-        if (Ok.LoggedIn()){
-            System.out.println("Deja connect");
-        } else {
-            System.out.println(Ok.login("a","b"));
+        // Make an instance of Student
+        Student student = new Student("Aubert", "Jean-Luc", "jean-luc.aubert@aelion.fr");
+        student.setUsername("jlaubert");
+        student.setPassword("dacodemaniak");
+
+        // Try to log with correct credentials
+        if (!student.isLoggedIn()) {
+            if (student.login("jlaubert", "dacodemaniak")) {
+                System.out.println("Bonjour " + student.firstName + " " + student.lastName);
+            } else {
+                System.out.println("Désolé, mais aucun utilisateur ne correspond à vos identifiants");
+            }
+        }
+
+        // Try to connect with bad credentials
+        if (student.isLoggedIn()) {
+            student.logout();
+        }
+        if (!student.login("toto", "tata")) {
+            System.out.println("Désolé mais aucun utilisateur ne correspond à ces identifiants");
         }
     }
 }
