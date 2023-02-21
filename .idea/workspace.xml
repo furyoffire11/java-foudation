@@ -7,10 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dde7da30-8f6e-4303-b6d1-8ea8830a5178" name="Changes" comment="Display implementation">
+    <list default="true" id="dde7da30-8f6e-4303-b6d1-8ea8830a5178" name="Changes" comment="Display sout removal">
+      <change afterPath="$PROJECT_DIR$/src/test/java/fr/aelion/services/courses/DisplayCourseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/run/CourseRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/run/CourseRun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/services/courses/DisplayCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/services/courses/DisplayCourse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +21,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -80,25 +80,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/FORMATION/devSpace/javaSpace/Project/jse-fundamentals&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/Users/FORMATION/devSpace/javaSpace/Project/jse-fundamentals",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="fr.aelion.models.course" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="fr.aelion.user" />
     </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="fr.aelion.services.courses" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fr.aelion.Main" />
       <module name="java-foundation" />
@@ -276,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676973847818</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Display sout removal">
+      <created>1676974692670</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1676974692670</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -338,7 +353,8 @@
     <MESSAGE value="Course creation" />
     <MESSAGE value="Course implementation" />
     <MESSAGE value="Display implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Display implementation" />
+    <MESSAGE value="Display sout removal" />
+    <option name="LAST_COMMIT_MESSAGE" value="Display sout removal" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/java_foundation$LoginManagerTest_stdLogin.ic" NAME="LoginManagerTest.stdLogin Coverage Results" MODIFIED="1676645931969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
