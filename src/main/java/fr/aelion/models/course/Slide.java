@@ -2,13 +2,12 @@ package fr.aelion.models.course;
 
 public class Slide extends Media {
     @Override
-    public void play() {
-        System.out.println("Je charge une présentation");
+    public void display() {
+
     }
 
     @Override
-    public void display() {
-        System.out.println("Slide");
-        super.display();
+    public void play() {
+
     }
 }

@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dde7da30-8f6e-4303-b6d1-8ea8830a5178" name="Changes" comment="fork jse foundation dacodemaniak">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="dde7da30-8f6e-4303-b6d1-8ea8830a5178" name="Changes" comment="Media update">
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/Interfaces/IDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/interfaces/IDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/models/course/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/models/course/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/models/course/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/models/course/Media.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +51,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="courses3" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -63,6 +65,9 @@
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2LoRACNuQu5lp1aU9TNh8CfRPSx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -109,6 +114,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LoginManagerTest.stdLogin" />
+        <item itemvalue="JUnit.LoginManagerTest" />
         <item itemvalue="JUnit.LoginManagerTest" />
         <item itemvalue="JUnit.LoginManagerTest.stdLogin" />
       </list>
@@ -186,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676907212915</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Media update">
+      <created>1676968066946</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1676968066946</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -242,7 +256,8 @@
     <MESSAGE value="unknow" />
     <MESSAGE value="unknown" />
     <MESSAGE value="fork jse foundation dacodemaniak" />
-    <option name="LAST_COMMIT_MESSAGE" value="fork jse foundation dacodemaniak" />
+    <MESSAGE value="Media update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Media update" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/java_foundation$LoginManagerTest_stdLogin.ic" NAME="LoginManagerTest.stdLogin Coverage Results" MODIFIED="1676645931969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

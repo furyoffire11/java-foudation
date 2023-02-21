@@ -1,6 +1,6 @@
 package fr.aelion.models.course;
 
-import fr.aelion.Interfaces.IDisplay;
+import fr.aelion.interfaces.IDisplay;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -9,12 +9,6 @@ import java.util.stream.Collectors;
 public class Course implements IDisplay {
     private Set<Media> medias = new HashSet<>();
     private String title;
-
-    @Override
-    public void display() {
-        System.out.println("Course : " + title + " (" + medias.size() + " items)");
-        medias.forEach(Media::display);
-    }
 
     public String getTitle() {
         return title;

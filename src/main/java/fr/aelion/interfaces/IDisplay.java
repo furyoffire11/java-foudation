@@ -1,4 +1,4 @@
-package fr.aelion.Interfaces;
+package fr.aelion.interfaces;
 
 public interface IDisplay {
     void display();

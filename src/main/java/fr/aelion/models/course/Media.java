@@ -1,10 +1,8 @@
 package fr.aelion.models.course;
 
-import fr.aelion.Interfaces.IDisplay;
+import fr.aelion.interfaces.IDisplay;
 
-import java.time.LocalDateTime;
-
-public abstract class Media implements IDisplay {
+public abstract class Media{
     protected String title;
     protected String summary;
     protected Float duration;
