@@ -7,15 +7,10 @@ import java.time.LocalDateTime;
 public abstract class Media implements IDisplay {
     protected String title;
     protected String summary;
-    protected LocalDateTime duration;
-
+    protected Float duration;
     protected Author author;
 
     public abstract void play();
-    @Override
-    public void display() {
-        System.out.println(title + "\n" + summary + " (" + duration + ")");
-    }
 
     public String getTitle() {
         return title;
@@ -33,11 +28,11 @@ public abstract class Media implements IDisplay {
         this.summary = summary;
     }
 
-    public LocalDateTime getDuration() {
+    public Float getDuration() {
         return duration;
     }
 
-    public void setDuration(LocalDateTime duration) {
+    public void setDuration(Float duration) {
         this.duration = duration;
     }
 

@@ -5,24 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dde7da30-8f6e-4303-b6d1-8ea8830a5178" name="Changes" comment="fork jse foundation dacodemaniak">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/Interfaces/IDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/models/course/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/models/course/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/models/course/Document.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/models/course/Media.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/models/course/Slide.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/models/course/Video.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/repositories/StudentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/StudentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/models/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/models/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/models/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/repo/StudentRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/run/PersonRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/run/PersonRun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/run/StudentRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/run/StudentRun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/user/LoginManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/user/LoginManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LoginManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StudentRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StudentRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +49,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -89,16 +72,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/FORMATION/devSpace/javaSpace/Project/jse-fundamentals",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/FORMATION/devSpace/javaSpace/Project/jse-fundamentals&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="fr.aelion.user" />
@@ -196,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676886493285</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fork jse foundation dacodemaniak">
+      <created>1676907212915</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1676907212915</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
