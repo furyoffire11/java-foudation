@@ -34,6 +34,6 @@ public class CourseRun {
     public void run(){
         DisplayCourse displayCourse = new DisplayCourse();
         displayCourse.setCourse(this.course);
-        displayCourse.display();
+        System.out.println(displayCourse.display());
     }
 }

@@ -8,10 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dde7da30-8f6e-4303-b6d1-8ea8830a5178" name="Changes" comment="Display implementation">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/run/CourseRun.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/repositories/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/repositories/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/run/CourseRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/run/CourseRun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/services/courses/DisplayCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/services/courses/DisplayCourse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -270,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676971727338</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Display implementation">
+      <created>1676973847818</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1676973847818</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
