@@ -7,12 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dde7da30-8f6e-4303-b6d1-8ea8830a5178" name="Changes" comment="Display test creation">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/helpers/MediaBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/helpers/interfaces/Builder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/fr/aelion/helpers/MediaBuilderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/fr/aelion/services/DisplayCourseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/aelion/services/DisplayCourseTest.java" afterDir="false" />
+    <list default="true" id="dde7da30-8f6e-4303-b6d1-8ea8830a5178" name="Changes" comment="Test creation">
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/helpers/MediaBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/helpers/MediaBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/helpers/interfaces/Builder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/helpers/interfaces/Builder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fr/aelion/helpers/MediaBuilderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/aelion/helpers/MediaBuilderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -310,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676983443678</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Test creation">
+      <created>1676988819488</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1676988819488</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -374,7 +379,8 @@
     <MESSAGE value="Display implementation" />
     <MESSAGE value="Display sout removal" />
     <MESSAGE value="Display test creation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Display test creation" />
+    <MESSAGE value="Test creation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test creation" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/java_foundation$LoginManagerTest_stdLogin.ic" NAME="LoginManagerTest.stdLogin Coverage Results" MODIFIED="1676645931969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

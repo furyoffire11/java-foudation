@@ -1,6 +1,7 @@
 package fr.aelion.helpers;
 
 import fr.aelion.models.course.Author;
+import fr.aelion.models.course.Media;
 import fr.aelion.models.course.Slide;
 import fr.aelion.models.course.Video;
 import org.junit.jupiter.api.BeforeEach;
@@ -22,16 +23,17 @@ class MediaBuilderTest {
     @Test
     @DisplayName("test slide class")
     void buildTest() {
-        assertTrue(mediaBuilder.build() instanceof Slide);
+        assertTrue(mediaBuilder.build().get() instanceof Slide);
     }
 
     @Test
     @DisplayName("test attributes")
     void attributesTest() {
-        assertAll(()->assertEquals("Test",mediaBuilder.build().getTitle()),
-                ()->assertTrue(mediaBuilder.build().getAuthor() instanceof Author),
-                ()->assertEquals("Test",mediaBuilder.build().getSummary()),
-                ()->assertEquals(Float.valueOf(1F),mediaBuilder.build().getDuration())
+        Media media = mediaBuilder.build().get();
+        assertAll(()->assertEquals("Test", media.getTitle()),
+                ()->assertTrue(media.getAuthor() instanceof Author),
+                ()->assertEquals("Test", media.getSummary()),
+                ()->assertEquals(Float.valueOf(1F), media.getDuration())
                 );
     }
 }
