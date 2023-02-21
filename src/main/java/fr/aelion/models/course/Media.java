@@ -1,7 +1,5 @@
 package fr.aelion.models.course;
 
-import fr.aelion.interfaces.IDisplay;
-
 public abstract class Media{
     protected String title;
     protected String summary;
