@@ -19,12 +19,16 @@ public class Course {
         this.title = title;
     }
 
+    public Set<Media> getMedias() {
+        return medias;
+    }
+
     public void addMedia(Media media){
         this.medias.add(media);
-    };
+    }
     public void removeMedia(Media media){
         this.medias.remove(media);
 
-    };
+    }
 
 }
