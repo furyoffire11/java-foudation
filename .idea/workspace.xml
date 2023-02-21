@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dde7da30-8f6e-4303-b6d1-8ea8830a5178" name="Changes" comment="Media update">
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/Interfaces/IDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/interfaces/IDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/models/course/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/models/course/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/models/course/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/models/course/Media.java" afterDir="false" />
+    <list default="true" id="dde7da30-8f6e-4303-b6d1-8ea8830a5178" name="Changes" comment="Display implementation">
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/run/CourseRun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/repositories/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/repositories/StudentRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,11 +92,27 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="fr.aelion.models.course" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="fr.aelion.user" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LoginManagerTest">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.aelion.Main" />
+      <module name="java-foundation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.aelion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LoginManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-foundation" />
       <option name="PACKAGE_NAME" value="" />
@@ -114,8 +134,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LoginManagerTest.stdLogin" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.LoginManagerTest" />
+        <item itemvalue="JUnit.LoginManagerTest.stdLogin" />
         <item itemvalue="JUnit.LoginManagerTest" />
         <item itemvalue="JUnit.LoginManagerTest.stdLogin" />
       </list>
@@ -200,7 +221,56 @@
       <option name="project" value="LOCAL" />
       <updated>1676968066946</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Clean up for course">
+      <created>1676968568124</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1676968568124</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Clean up for course">
+      <created>1676968624579</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1676968624579</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Clean up for course">
+      <created>1676968664842</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1676968664842</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Media subclass creation">
+      <created>1676968746812</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1676968746812</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Course creation">
+      <created>1676969244745</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1676969244745</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Course implementation">
+      <created>1676969908139</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1676969908139</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Display implementation">
+      <created>1676971727338</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1676971727338</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -214,7 +284,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="dev" />
+                        <option value="courses" />
                       </list>
                     </value>
                   </entry>
@@ -257,7 +327,12 @@
     <MESSAGE value="unknown" />
     <MESSAGE value="fork jse foundation dacodemaniak" />
     <MESSAGE value="Media update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Media update" />
+    <MESSAGE value="Clean up for course" />
+    <MESSAGE value="Media subclass creation" />
+    <MESSAGE value="Course creation" />
+    <MESSAGE value="Course implementation" />
+    <MESSAGE value="Display implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Display implementation" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/java_foundation$LoginManagerTest_stdLogin.ic" NAME="LoginManagerTest.stdLogin Coverage Results" MODIFIED="1676645931969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

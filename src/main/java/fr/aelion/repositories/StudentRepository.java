@@ -31,8 +31,6 @@ public class StudentRepository {
         Student student = new Student("Bond", "James", "james.bond@mi6.co.uk");
         student.setUsername("bond");
         student.setPassword("007");
-
-        System.out.println(student);
         this.students.add(student);
     }
 }
