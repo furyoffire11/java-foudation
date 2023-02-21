@@ -1,18 +1,20 @@
-package fr.aelion.services.courses;
+package fr.aelion.services;
 
 import fr.aelion.models.course.Media;
 import fr.aelion.models.course.Slide;
 import fr.aelion.repositories.course.Course;
+import fr.aelion.services.courses.DisplayCourse;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class DisplayCourseTest {
     private DisplayCourse displayCourse = new DisplayCourse();
 
     private StringBuilder expected = new StringBuilder();
+    
     @BeforeEach
     void setUp() {
         Course course = new Course();

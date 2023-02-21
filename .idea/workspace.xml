@@ -7,9 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dde7da30-8f6e-4303-b6d1-8ea8830a5178" name="Changes" comment="Display sout removal">
-      <change afterPath="$PROJECT_DIR$/src/test/java/fr/aelion/services/courses/DisplayCourseTest.java" afterDir="false" />
+    <list default="true" id="dde7da30-8f6e-4303-b6d1-8ea8830a5178" name="Changes" comment="Display test creation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fr/aelion/services/courses/DisplayCourseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/aelion/services/DisplayCourseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +77,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="autoscrollFromSource" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
@@ -89,7 +89,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "last_opened_file_path": "C:/Users/FORMATION/devSpace/javaSpace/Project/jse-fundamentals",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
+    "settings.editor.selected.configurable": "project.scopes"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -100,6 +100,7 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="fr.aelion.services.courses" />
       <recent name="fr.aelion.user" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
@@ -291,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676974692670</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Display test creation">
+      <created>1676976361331</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1676976361331</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -354,7 +362,19 @@
     <MESSAGE value="Course implementation" />
     <MESSAGE value="Display implementation" />
     <MESSAGE value="Display sout removal" />
-    <option name="LAST_COMMIT_MESSAGE" value="Display sout removal" />
+    <MESSAGE value="Display test creation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Display test creation" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/fr/aelion/services/DisplayCourseTest.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/java_foundation$LoginManagerTest_stdLogin.ic" NAME="LoginManagerTest.stdLogin Coverage Results" MODIFIED="1676645931969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
