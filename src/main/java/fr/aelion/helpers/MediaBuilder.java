@@ -38,6 +38,12 @@ public class MediaBuilder implements Builder<Media> {
 
     @Override
     public Optional<Media> build() {
+
+        if(this.title == null||this.duration == null){
+            return Optional.empty();
+
+        }
+
         Media media = null;
 
         switch (this.mediaType.toUpperCase()){
@@ -51,6 +57,10 @@ public class MediaBuilder implements Builder<Media> {
                 media = new Video();
                 }
 
+        if(this.title == null||this.duration == null){
+            return Optional.empty();
+
+        }
 
         media.setTitle(this.title);
         media.setSummary(this.summary);

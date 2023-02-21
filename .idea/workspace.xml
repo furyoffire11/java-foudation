@@ -7,9 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dde7da30-8f6e-4303-b6d1-8ea8830a5178" name="Changes" comment="Test creation">
+    <list default="true" id="dde7da30-8f6e-4303-b6d1-8ea8830a5178" name="Changes" comment="Builder made optional">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/helpers/MediaBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/helpers/MediaBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/helpers/interfaces/Builder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/helpers/interfaces/Builder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/fr/aelion/helpers/MediaBuilderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/aelion/helpers/MediaBuilderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +59,19 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="6045b97d-53aa-4fd2-a806-290efe5c2592" />
+        <option name="url" value="https://github.com/furyoffire11/java-foudation.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -315,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676988819488</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Builder made optional">
+      <created>1676989183739</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1676989183739</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -380,7 +400,8 @@
     <MESSAGE value="Display sout removal" />
     <MESSAGE value="Display test creation" />
     <MESSAGE value="Test creation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test creation" />
+    <MESSAGE value="Builder made optional" />
+    <option name="LAST_COMMIT_MESSAGE" value="Builder made optional" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/java_foundation$LoginManagerTest_stdLogin.ic" NAME="LoginManagerTest.stdLogin Coverage Results" MODIFIED="1676645931969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

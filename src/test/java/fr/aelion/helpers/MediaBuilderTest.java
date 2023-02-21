@@ -8,15 +8,21 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.util.Optional;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class MediaBuilderTest {
 
     private MediaBuilder mediaBuilder = new MediaBuilder();
+    private MediaBuilder mediaBadBuilder = new MediaBuilder();
     @BeforeEach
     void setUp() {
         mediaBuilder.setMediaType("slide");
         mediaBuilder.title("Test").author(new Author()).summary("Test").duration(Float.valueOf(1F));
+
+        mediaBadBuilder.setMediaType("");
+        mediaBadBuilder.author(new Author()).summary("Fail test");
 
     }
 
@@ -29,11 +35,17 @@ class MediaBuilderTest {
     @Test
     @DisplayName("test attributes")
     void attributesTest() {
-        Media media = mediaBuilder.build().get();
-        assertAll(()->assertEquals("Test", media.getTitle()),
-                ()->assertTrue(media.getAuthor() instanceof Author),
-                ()->assertEquals("Test", media.getSummary()),
-                ()->assertEquals(Float.valueOf(1F), media.getDuration())
+        assertAll(()->assertEquals("Test", mediaBuilder.build().get().getTitle()),
+                ()->assertTrue(mediaBuilder.build().get().getAuthor() instanceof Author),
+                ()->assertEquals("Test", mediaBuilder.build().get().getSummary()),
+                ()->assertEquals(Float.valueOf(1F), mediaBuilder.build().get().getDuration())
                 );
+    }
+
+    @Test
+    @DisplayName("fail test build")
+    void buildFailTest() {
+        assertAll(()-> assertTrue(mediaBadBuilder.build() instanceof Optional<Media>),
+                ()-> assertTrue(mediaBadBuilder.build().isEmpty()));
     }
 }
