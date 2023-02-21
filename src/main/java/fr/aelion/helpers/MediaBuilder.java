@@ -37,10 +37,15 @@ public class MediaBuilder implements Builder<Media> {
     }
 
     @Override
-    public Optional<Media> build() {
+    public Media build() throws Exception {
 
         if(this.title == null||this.duration == null){
-            return Optional.empty();
+            throw new Exception("title or duration missing");
+
+        }
+
+        if (this.mediaType == null){
+            throw new Exception("no media type");
 
         }
 
@@ -57,15 +62,10 @@ public class MediaBuilder implements Builder<Media> {
                 media = new Video();
                 }
 
-        if(this.title == null||this.duration == null){
-            return Optional.empty();
-
-        }
-
         media.setTitle(this.title);
         media.setSummary(this.summary);
         media.setDuration(this.duration);
         media.setAuthor(this.author);
-        return Optional.of(media);
+        return media;
     }
 }

@@ -28,24 +28,40 @@ class MediaBuilderTest {
 
     @Test
     @DisplayName("test slide class")
-    void buildTest() {
-        assertTrue(mediaBuilder.build().get() instanceof Slide);
+    void buildTest() throws Exception {
+        try {
+            assertTrue(mediaBuilder.build() instanceof Slide);
+        } catch (Exception e) {
+            throw new Exception(e);
+        }
     }
 
     @Test
     @DisplayName("test attributes")
-    void attributesTest() {
-        assertAll(()->assertEquals("Test", mediaBuilder.build().get().getTitle()),
-                ()->assertTrue(mediaBuilder.build().get().getAuthor() instanceof Author),
-                ()->assertEquals("Test", mediaBuilder.build().get().getSummary()),
-                ()->assertEquals(Float.valueOf(1F), mediaBuilder.build().get().getDuration())
+    void attributesTest() throws Exception {
+        try {
+        assertAll(()->assertEquals("Test", mediaBuilder.build().getTitle()),
+                ()->assertTrue(mediaBuilder.build().getAuthor() instanceof Author),
+                ()->assertEquals("Test", mediaBuilder.build().getSummary()),
+                ()->assertEquals(Float.valueOf(1F), mediaBuilder.build().getDuration())
                 );
+    } catch (Exception e) {
+        throw new Exception(e);
+    }
     }
 
     @Test
-    @DisplayName("fail test build")
-    void buildFailTest() {
-        assertAll(()-> assertTrue(mediaBadBuilder.build() instanceof Optional<Media>),
-                ()-> assertTrue(mediaBadBuilder.build().isEmpty()));
+    @DisplayName("Missing attribute test")
+    void missingAttributesTest(){
+        assertAll(()-> assertThrows(Exception.class,()->mediaBadBuilder.build())
+                /*,()-> assertTrue(mediaBadBuilder.build().isEmpty())*/);
+    }
+
+    @Test
+    @DisplayName("Missing Type test")
+    void missingTypeTest(){
+        mediaBadBuilder.setMediaType(null);
+        assertAll(()-> assertThrows(Exception.class,()->mediaBadBuilder.build())
+                /*,()-> assertTrue(mediaBadBuilder.build().isEmpty())*/);
     }
 }
