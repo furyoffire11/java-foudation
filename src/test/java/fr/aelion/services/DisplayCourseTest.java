@@ -14,7 +14,7 @@ class DisplayCourseTest {
     private DisplayCourse displayCourse = new DisplayCourse();
 
     private StringBuilder expected = new StringBuilder();
-    
+
     @BeforeEach
     void setUp() {
         Course course = new Course();
