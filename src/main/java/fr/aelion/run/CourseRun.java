@@ -1,9 +1,7 @@
 package fr.aelion.run;
 
-import fr.aelion.models.course.Document;
-import fr.aelion.models.course.Media;
-import fr.aelion.models.course.Slide;
-import fr.aelion.models.course.Video;
+import fr.aelion.helpers.MediaBuilder;
+import fr.aelion.models.course.*;
 import fr.aelion.repositories.course.Course;
 import fr.aelion.services.courses.DisplayCourse;
 
@@ -16,19 +14,55 @@ public class CourseRun {
         makeCourse();
     }
 
-    private void makeCourse() {
-        Media video = new Video();
-        video.setTitle("Create table");
+    private void makeCourse(){
+        MediaBuilder mediaBuilder = new MediaBuilder();
+        mediaBuilder.setMediaType("video");
+        mediaBuilder
+                .title("Create table")
+                .summary("create une table")
+                .duration(5.35F)
+                .author(new Author());
+        try {
+            this.course.addMedia(mediaBuilder.build());
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
 
-        Media slide = new Slide();
-        slide.setTitle("Alter table");
 
-        Media document = new Document();
-        document.setTitle("Drop table");
+        mediaBuilder.setMediaType("slide");
+        mediaBuilder
+                .title("Alter table")
+                .summary("alter une table")
+                .duration(3.30F)
+                .author(new Author());
+        try {
+            this.course.addMedia(mediaBuilder.build());
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
 
-        course.addMedia(video);
-        course.addMedia(slide);
-        course.addMedia(document);
+
+        mediaBuilder.setMediaType("document");
+        mediaBuilder
+                .title("Drop table")
+                .summary("drop une table")
+                .duration(1.10F)
+                .author(new Author());
+        try {
+            this.course.addMedia(mediaBuilder.build());
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+
+        MediaBuilder badBuilder = new MediaBuilder();
+        badBuilder
+                .title("Bad table")
+                .duration(1.00F);
+        try {
+            this.course.addMedia(badBuilder.build());
+        } catch (Exception e) {
+            System.out.println(e+"\n");
+        }
     }
 
     public void run(){
