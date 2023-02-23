@@ -1,12 +1,11 @@
 package fr.aelion.models.course;
 
-public abstract class Media{
+public abstract class Media {
     protected String title;
     protected String summary;
     protected Float duration;
-    protected Author author;
 
-    public abstract void play();
+    protected Author author;
 
     public String getTitle() {
         return title;
@@ -39,4 +38,6 @@ public abstract class Media{
     public void setAuthor(Author author) {
         this.author = author;
     }
+
+    public abstract void play();
 }

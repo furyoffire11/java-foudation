@@ -1,16 +1,14 @@
 package fr.aelion;
 
 import fr.aelion.run.CourseRun;
-import fr.aelion.run.PersonRun;
-import fr.aelion.run.StudentRun;
-
+import fr.aelion.run.MediaRun;
+import fr.aelion.services.courses.DisplayCourse;
 
 public class Main {
 
     public static void main(String[] args) {
-        CourseRun CRun = new CourseRun();
-        CRun.run();
-
+        MediaRun media = new MediaRun();
+        media.run();
     }
 
 }

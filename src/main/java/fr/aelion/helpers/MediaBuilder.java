@@ -2,17 +2,20 @@ package fr.aelion.helpers;
 
 import fr.aelion.helpers.exceptions.NoMediaTypeException;
 import fr.aelion.helpers.exceptions.NotEnoughArgsException;
+import fr.aelion.helpers.factory.MediaFactory;
 import fr.aelion.helpers.interfaces.Builder;
 import fr.aelion.models.course.*;
+
 
 import java.util.Optional;
 
 public class MediaBuilder implements Builder<Media> {
     private String title;
     private String summary;
-    private String mediaType;
     private Float duration;
     private Author author;
+
+    private String mediaType;
 
     public void setMediaType(String mediaType) {
         this.mediaType = mediaType;
@@ -37,37 +40,29 @@ public class MediaBuilder implements Builder<Media> {
         this.author = author;
         return this;
     }
-
     @Override
     public Media build() throws NotEnoughArgsException, NoMediaTypeException {
 
-        if(this.title == null||this.duration == null){
-            throw new NotEnoughArgsException("no title or duration");
-
+        // Hey Buddy, what if no title or duration ?
+        if (this.title == null || this.duration == null) {
+            throw new NotEnoughArgsException();
         }
 
-        if (this.mediaType == null){
+        if (this.mediaType == null) {
             throw new NoMediaTypeException();
-
         }
 
-        Media media = null;
+        Media media = new MediaFactory().getMedia(this.mediaType);
+        if (media==null){
+            throw new IllegalArgumentException("No media type : "+mediaType);
+        }
 
-        switch (this.mediaType.toUpperCase()){
-            case "DOCUMENT":
-                media = new Document();
-                break;
-            case "SLIDE":
-                media = new Slide();
-                break;
-            default:
-                media = new Video();
-                }
-
+        // Next... fill attributes
         media.setTitle(this.title);
         media.setSummary(this.summary);
         media.setDuration(this.duration);
         media.setAuthor(this.author);
+
         return media;
     }
 }

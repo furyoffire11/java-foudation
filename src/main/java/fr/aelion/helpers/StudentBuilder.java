@@ -1,78 +1,89 @@
 package fr.aelion.helpers;
 
-import fr.aelion.helpers.exceptions.NotEnoughArgsException;
+import fr.aelion.helpers.exceptions.StudentException;
 import fr.aelion.helpers.interfaces.Builder;
 import fr.aelion.models.Student;
 
-public class StudentBuilder implements Builder<Student>  {
-
+public class StudentBuilder implements Builder<Student> {
     private static StudentBuilder instance;
-
     private String lastName;
     private String firstName;
-    private String email;
     private String phoneNumber;
-    private String login;
+    private String email;
+
+    private String username;
     private String password;
-    private Boolean isLoggedIn = false;
+
+    private StudentBuilder() {}
 
     public static StudentBuilder getInstance() {
-        if (instance == null) {
-            instance = new StudentBuilder();
+        if (StudentBuilder.instance == null) {
+            StudentBuilder.instance = new StudentBuilder();
+        } else {
+            StudentBuilder.instance
+                    .email(null)
+                    .password(null)
+                    .username(null)
+                    .lastName(null)
+                    .firstName(null)
+                    .phoneNumber(null);
         }
-        return instance;
+        return StudentBuilder.instance;
     }
-
-    public StudentBuilder lastName(String string) {
-        this.lastName = string;
-        return this;
-    }
-    public StudentBuilder firstName(String string) {
-        this.firstName = string;
+    public StudentBuilder lastName(String lastName) {
+        this.lastName = lastName;
         return this;
     }
 
-    public StudentBuilder email(String string) {
-        this.email = string;
+    public StudentBuilder firstName(String firstName) {
+        this.firstName = firstName;
         return this;
     }
 
-    public StudentBuilder phoneNumber(String string) {
-        this.phoneNumber = string;
+    public StudentBuilder phoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
         return this;
     }
 
-    public StudentBuilder login(String string) {
-        this.login = string;
+    public StudentBuilder email(String email) {
+        this.email = email;
         return this;
     }
 
-    public StudentBuilder password(String string) {
-        this.password = string;
+    public StudentBuilder username(String username) {
+        this.username = username;
         return this;
     }
 
-    private StudentBuilder() { }
-
+    public StudentBuilder password(String password) {
+        this.password = password;
+        return this;
+    }
     @Override
-    public Student build() throws NotEnoughArgsException {
-        if (this.lastName == null || this.email == null || this.login == null || this.password == null) {
-            throw new NotEnoughArgsException("Missing last name or email or login or password");
+    public Student build() throws StudentException {
+        if (this.lastName == null) {
+            throw StudentException.noNameException();
         }
 
-        Student student = new Student(this.lastName, this.email, this.login, this.password);
+        if (this.email == null) {
+            throw StudentException.noMailException();
+        }
+
+        if (this.username == null) {
+            throw StudentException.noUsernameException();
+        }
+
+        if (this.password == null) {
+            throw StudentException.noPasswordException();
+        }
+
+        // Make the Student
+        Student student = new Student(this.lastName, this.firstName, this.email);
+        student.setUsername(this.username);
+        student.setPassword(this.password);
         student.setPhoneNumber(this.phoneNumber);
-        student.setFirstName(this.firstName);
 
         return student;
     }
 
-    public void reset() {
-        this.lastName = null;
-        this.firstName = null;
-        this.email = null;
-        this.password = null;
-        this.login = null;
-        this.phoneNumber = null;
-    }
 }

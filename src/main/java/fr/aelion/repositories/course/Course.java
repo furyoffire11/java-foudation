@@ -6,9 +6,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Course {
-
     private Set<Media> medias = new HashSet<>();
-
     private String title;
 
     public String getTitle() {
@@ -23,12 +21,11 @@ public class Course {
         return medias;
     }
 
-    public void addMedia(Media media){
+    public void addMedia(Media media) {
         this.medias.add(media);
     }
-    public void removeMedia(Media media){
+
+    public void removeMedia(Media media) {
         this.medias.remove(media);
-
     }
-
 }

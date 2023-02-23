@@ -8,76 +8,86 @@ import fr.aelion.repositories.course.Course;
 import fr.aelion.services.courses.DisplayCourse;
 
 public class CourseRun {
-
     private Course course = new Course();
 
     public CourseRun(){
-        course.setTitle("SQL");
-        makeCourse();
+        this.course.setTitle("SQL");
+        this.makeCourse();
     }
 
-    private void makeCourse(){
-        MediaBuilder mediaBuilder = new MediaBuilder();
-        mediaBuilder.setMediaType("video");
-        mediaBuilder
-                .title("Create table")
-                .summary("create une table")
+    public void run() {
+        DisplayCourse displayCourse = new DisplayCourse();
+        displayCourse.setCourse(this.course);
+        System.out.println(displayCourse.displayBuilder());
+    }
+    private void makeCourse() {
+
+        MediaBuilder videoBuilder = new MediaBuilder();
+        videoBuilder.setMediaType("video");
+        videoBuilder
+                .title("Create Table")
+                .summary("Créer une table")
                 .duration(5.35F)
                 .author(new Author());
-        try {
-            this.course.addMedia(mediaBuilder.build());
-        } catch (NoMediaTypeException e) {
-            System.out.println(e);
-        } catch (NotEnoughArgsException e) {
-            System.out.println(e);
-        }
 
-
-        mediaBuilder.setMediaType("slide");
-        mediaBuilder
+        MediaBuilder slideBuilder = new MediaBuilder();
+        slideBuilder.setMediaType("slide");
+        slideBuilder
                 .title("Alter table")
-                .summary("alter une table")
+                .summary("Modifier une table")
                 .duration(3.30F)
                 .author(new Author());
-        try {
-            this.course.addMedia(mediaBuilder.build());
-        } catch (NoMediaTypeException e) {
-            System.out.println(e);
-        } catch (NotEnoughArgsException e) {
-            System.out.println(e);
-        }
 
-
-        mediaBuilder.setMediaType("document");
-        mediaBuilder
+        MediaBuilder docBuilder = new MediaBuilder();
+        docBuilder.setMediaType("document");
+        docBuilder
                 .title("Drop table")
-                .summary("drop une table")
+                .summary("Supprimer une table")
                 .duration(1.10F)
                 .author(new Author());
-        try {
-            this.course.addMedia(mediaBuilder.build());
-        } catch (NoMediaTypeException e) {
-            System.out.println(e);
-        } catch (NotEnoughArgsException e) {
-            System.out.println(e);
-        }
 
         MediaBuilder badBuilder = new MediaBuilder();
         badBuilder
-                .title("Bad table")
-                .duration(1.00F);
+                .title("Not in the list")
+                .duration(0.10F);
+
+        try {
+            this.course.addMedia(videoBuilder.build());
+        } catch (NoMediaTypeException e) {
+            System.out.println(e.getMessage());
+        } catch (NotEnoughArgsException e) {
+            System.out.println(e.getMessage());
+        }
+
+        try {
+            this.course.addMedia(slideBuilder.build());
+        } catch (NoMediaTypeException e) {
+            System.out.println(e.getMessage());
+        } catch (NotEnoughArgsException e) {
+            System.out.println(e.getMessage());
+        }
+
+        try {
+            this.course.addMedia(docBuilder.build());
+        } catch (NoMediaTypeException e) {
+            System.out.println(e.getMessage());
+        } catch (NotEnoughArgsException e) {
+            System.out.println(e.getMessage());
+        }
+
         try {
             this.course.addMedia(badBuilder.build());
         } catch (NoMediaTypeException e) {
-            System.out.println(e);
+            System.out.println(e.getMessage());
+            badBuilder.setMediaType("video");
         } catch (NotEnoughArgsException e) {
-            System.out.println(e);
+            System.out.println(e.getMessage());
+        } finally {
+            try {
+                this.course.addMedia(badBuilder.build());
+            } catch (Exception e) {
+                System.out.println("So bad... One more error");
+            }
         }
-    }
-
-    public void run(){
-        DisplayCourse displayCourse = new DisplayCourse();
-        displayCourse.setCourse(this.course);
-        System.out.println(displayCourse.display());
     }
 }

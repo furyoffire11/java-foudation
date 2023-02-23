@@ -3,7 +3,7 @@ package fr.aelion.run;
 import fr.aelion.models.Person;
 
 /**
- *  name PersonRun
+ * @name PersonRun
  *  Make some Person instances and make each say Hello
  */
 public class PersonRun {

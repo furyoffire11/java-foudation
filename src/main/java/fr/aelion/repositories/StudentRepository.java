@@ -1,5 +1,7 @@
 package fr.aelion.repositories;
 
+import fr.aelion.helpers.StudentBuilder;
+import fr.aelion.helpers.exceptions.StudentException;
 import fr.aelion.models.Student;
 
 import java.util.ArrayList;
@@ -8,13 +10,13 @@ import java.util.List;
 public class StudentRepository {
     private List<Student> students = new ArrayList<>();
 
-    public StudentRepository() {
+    public StudentRepository() throws StudentException {
         this.populate();
     }
 
     public Student findByLoginAndPassword(String login, String password) {
         for (Student student : this.students) {
-            if (student.getUsername().equals(login) && student.getPassword().equals(password)) {
+            if (student.getUsername() == login && student.getPassword() == password) {
                 return student;
             }
         }
@@ -24,13 +26,25 @@ public class StudentRepository {
     public int size() {
         return this.students.size();
     }
-    private void populate() {
+    private void populate() throws StudentException {
+        StudentBuilder builder = StudentBuilder.getInstance();
+        builder
+                .firstName("Jean-Luc")
+                .lastName("Aubert")
+                .email("jean-luc.aubert@aelion.fr")
+                .password("truc")
+                .username("truc");
+
+        this.students.add(builder.build());
+
+        builder = StudentBuilder.getInstance();
+        builder
+                .firstName("Jean")
+                .lastName("Talut")
+                .email("jean.talut@voiture.com")
+                .password("truc")
+                .username("truc");
 
 
-        // Make an instance of Student
-        Student student = new Student("Bond", "James", "james.bond@mi6.co.uk");
-        student.setUsername("bond");
-        student.setPassword("007");
-        this.students.add(student);
     }
 }
