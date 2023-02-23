@@ -10,7 +10,7 @@ public class StudentTest {
 
     @BeforeEach()
     void setUp() {
-        student = new Student("Aubert", "Jean-Luc", "jean-luc.aubert@aelion.fr");
+        Student student = new Student("Aubert", "jean-luc.aubert@aelion.fr","jlaubert" ,"dacodemaniak");
     }
 
     @Test
@@ -26,16 +26,9 @@ public class StudentTest {
     @Test
     @DisplayName("Student should have 'Casper' as lastName")
     void testPublicAttribute() {
-        Student student = new Student("Tartempion", "Jules", "jt@test.com");
+        Student student = new Student("Aubert", "jean-luc.aubert@aelion.fr","jlaubert" ,"dacodemaniak");
         student.lastName = "Casper";
         assertEquals("Casper", student.lastName);
-    }
-
-    @Test
-    @DisplayName("Student should not have 'anonymous' as email")
-    void testEmail() {
-        Student student = new Student("Tartempion", "Jules", "jt@test.com");
-        assertFalse(student.setEmail("anonymous"));
     }
 
 }

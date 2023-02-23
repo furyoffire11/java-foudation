@@ -1,6 +1,8 @@
 package fr.aelion.run;
 
 import fr.aelion.helpers.MediaBuilder;
+import fr.aelion.helpers.exceptions.NoMediaTypeException;
+import fr.aelion.helpers.exceptions.NotEnoughArgsException;
 import fr.aelion.models.course.*;
 import fr.aelion.repositories.course.Course;
 import fr.aelion.services.courses.DisplayCourse;
@@ -24,8 +26,10 @@ public class CourseRun {
                 .author(new Author());
         try {
             this.course.addMedia(mediaBuilder.build());
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+        } catch (NoMediaTypeException e) {
+            System.out.println(e);
+        } catch (NotEnoughArgsException e) {
+            System.out.println(e);
         }
 
 
@@ -37,8 +41,10 @@ public class CourseRun {
                 .author(new Author());
         try {
             this.course.addMedia(mediaBuilder.build());
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+        } catch (NoMediaTypeException e) {
+            System.out.println(e);
+        } catch (NotEnoughArgsException e) {
+            System.out.println(e);
         }
 
 
@@ -50,8 +56,10 @@ public class CourseRun {
                 .author(new Author());
         try {
             this.course.addMedia(mediaBuilder.build());
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+        } catch (NoMediaTypeException e) {
+            System.out.println(e);
+        } catch (NotEnoughArgsException e) {
+            System.out.println(e);
         }
 
         MediaBuilder badBuilder = new MediaBuilder();
@@ -60,8 +68,10 @@ public class CourseRun {
                 .duration(1.00F);
         try {
             this.course.addMedia(badBuilder.build());
-        } catch (Exception e) {
-            System.out.println(e+"\n");
+        } catch (NoMediaTypeException e) {
+            System.out.println(e);
+        } catch (NotEnoughArgsException e) {
+            System.out.println(e);
         }
     }
 

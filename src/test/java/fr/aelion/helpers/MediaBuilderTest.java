@@ -4,6 +4,7 @@ import fr.aelion.models.course.Author;
 import fr.aelion.models.course.Media;
 import fr.aelion.models.course.Slide;
 import fr.aelion.models.course.Video;
+import org.junit.Before;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

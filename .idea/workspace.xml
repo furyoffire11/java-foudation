@@ -7,9 +7,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dde7da30-8f6e-4303-b6d1-8ea8830a5178" name="Changes" comment="Swapped Optional builder to exceptions throws">
+    <list default="true" id="dde7da30-8f6e-4303-b6d1-8ea8830a5178" name="Changes" comment="exception handling course run">
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/helpers/StudentBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/helpers/exceptions/NoMediaTypeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/helpers/exceptions/NotEnoughArgsException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/helpers/MediaBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/helpers/MediaBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/models/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/models/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/aelion/run/CourseRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/aelion/run/CourseRun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fr/aelion/helpers/MediaBuilderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/aelion/helpers/MediaBuilderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -348,7 +354,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676992283227</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="exception handling course run">
+      <created>1677056419947</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1677056419947</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -415,7 +428,8 @@
     <MESSAGE value="Test creation" />
     <MESSAGE value="Builder made optional" />
     <MESSAGE value="Swapped Optional builder to exceptions throws" />
-    <option name="LAST_COMMIT_MESSAGE" value="Swapped Optional builder to exceptions throws" />
+    <MESSAGE value="exception handling course run" />
+    <option name="LAST_COMMIT_MESSAGE" value="exception handling course run" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/java_foundation$LoginManagerTest_stdLogin.ic" NAME="LoginManagerTest.stdLogin Coverage Results" MODIFIED="1676645931969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

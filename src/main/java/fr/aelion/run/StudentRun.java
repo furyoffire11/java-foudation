@@ -5,9 +5,7 @@ import fr.aelion.models.Student;
 public class StudentRun {
     public void run() {
         // Make an instance of Student
-        Student student = new Student("Aubert", "Jean-Luc", "jean-luc.aubert@aelion.fr");
-        student.setUsername("jlaubert");
-        student.setPassword("dacodemaniak");
+        Student student = new Student("Aubert", "jean-luc.aubert@aelion.fr","jlaubert" ,"dacodemaniak");
 
         // Try to log with correct credentials
         if (!student.isLoggedIn()) {
